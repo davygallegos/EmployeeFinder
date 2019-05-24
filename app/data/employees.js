@@ -1,3 +1,4 @@
+//json
 var employees = {
     "name":"Ahmed",
     "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
@@ -30,4 +31,4 @@ var employees = {
         3
       ]
   }
-  module.exports = employees
+  module.exports = employees;
