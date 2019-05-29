@@ -158,7 +158,7 @@
     <hr>
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/employeefinder">GitHub Repo</a></p>
+        <p><a href="/api/employees">API employees List</a> | <a href="https://github.com/afhaque/employeefinder">GitHub Repo</a></p>
       </div>
     </footer>
 
@@ -250,8 +250,8 @@
           ]
         };
 
-        // AJAX post the data to the friends API.
-        $.post("/api/friends", userData, function(data) {
+        // AJAX post the data to the employees API.
+        $.post("/api/employees", userData, function(data) {
 
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#match-name").text(data.name);

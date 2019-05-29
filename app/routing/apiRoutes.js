@@ -5,10 +5,10 @@ var employees = require("../data/employees");
 
 module.exports = function (app){
 // Basic route that sends the user first to the AJAX Page
-app.get("/api/employees.js", function(req, res) {
-    res.sendFile(path.join("../data/employees.js"));
+app.get("/api/employees", function(req, res) {
+    return res.json(employees);
   });
-
+//res.sendFile sends HTML file not JS!
   // API POST Requests
   // Below code handles when a user submits a form and thus submits data to the server.
   // In each of the below cases, when a user submits form data (a JSON object)
